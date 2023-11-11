@@ -9,10 +9,21 @@ public abstract class WoodwindInstruments extends Stock implements IPlay {
 
     private int buttons;
 
-    public WoodwindInstruments(int costPrice, int retailPrice, String reed, int buttons) {
+    public WoodwindInstruments(int costPrice, int retailPrice, String name, String reed, int buttons) {
         super(costPrice, retailPrice, name);
         this.reed = reed;
-        this.buttons= buttons;
+        this.buttons = buttons;
     }
+
+    public String getReed() {
+        return reed;
+    }
+
+    public int getButtons() {
+        return buttons;
+    }
+
+
+
 }
 

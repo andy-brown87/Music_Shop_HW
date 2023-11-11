@@ -3,17 +3,28 @@ package String_Instruments;
 import Stock.Stock;
 import Interfaces.IPlay;
 
+import javax.sound.midi.Instrument;
+
 public abstract class StringInstruments extends Stock implements IPlay {
 
-    private int Strings;
+    private int NumOfStrings;
+    private String Material;
 
-    public StringInstruments(int costPrice, int retailPrice, int Strings) {
+
+    public StringInstruments(int costPrice, int retailPrice, String name, int numOfStrings, String material) {
         super(costPrice, retailPrice, name);
-        this.Strings = Strings;
-
+        NumOfStrings = numOfStrings;
+        Material = material;
     }
 
-    public int getStrings() {
-        return Strings;
+    public int getNumOfStrings() {
+        return NumOfStrings;
     }
+
+    public String getMaterial() {
+        return Material;
+    }
+
+
+
 }

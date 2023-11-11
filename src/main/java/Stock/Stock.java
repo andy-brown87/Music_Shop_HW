@@ -27,4 +27,8 @@ public abstract class Stock implements ISell {
     public String getName() {
         return name;
     }
+
+    public int calculateMarkup() {
+        return this.retailPrice - this.costPrice;
+    }
 }

@@ -4,7 +4,10 @@ import Stock.Stock;
 
 public abstract class Accesories extends Stock {
 
-    public Accesories(int costPrice, int retailPrice) {
-        super(costPrice, retailPrice);
+    public Accesories(int costPrice, int retailPrice, String name) {
+        super(costPrice, retailPrice, name);
     }
+
+
+
 }
