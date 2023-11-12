@@ -1,6 +1,10 @@
+
+
 public enum InstrumentType {
 
     WOODWIND,
-    STRING;
+    STRING,
+    ACCESORIES;
+
 
 }

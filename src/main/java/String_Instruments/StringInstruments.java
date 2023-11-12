@@ -11,8 +11,8 @@ public abstract class StringInstruments extends Stock implements IPlay {
     private String Material;
 
 
-    public StringInstruments(int costPrice, int retailPrice, String name, int numOfStrings, String material) {
-        super(costPrice, retailPrice, name);
+    public StringInstruments(int costPrice, int retailPrice, String name, InstrumentType type, int numOfStrings, String material) {
+        super(costPrice, retailPrice, name, type);
         NumOfStrings = numOfStrings;
         Material = material;
     }
